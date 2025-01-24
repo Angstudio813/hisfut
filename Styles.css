@@ -1,0 +1,88 @@
+body{
+    background-color: darkcyan;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    min-block-size: 100vh;
+
+    
+}
+header{
+    font-size: 34px;
+    margin: 12px;
+    background-color: rgb(242, 246, 247);
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.Registrate-Container{
+
+    margin: 0 auto; /* Esto lo centra en el eje horizontal */
+    background-color: white;
+    inline-size: 100%;
+    max-inline-size: 450px; /* Máximo ancho para el contenedor */
+    margin-block-start: 10px; /* Espacio entre la etiqueta y el campo */
+    box-sizing: border-box; /* Incluye el padding y el borde dentro del tamaño total */
+    padding: 35px;
+    border-radius: 12px;
+
+    flex-direction: column;
+    display: flex; /* Usar flexbox para centrar el contenido */
+
+}
+
+.Registrate-Container label{
+    display: block;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(36, 35, 35);
+    font-size: 21px ;
+
+
+    
+}
+
+.Registrate-Container input {
+    display: block;
+    inline-size: 100%;
+    padding: 0px;
+    background-color:azure;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 4px;
+    font-size: 14px ;
+    border: 1px solid #ccc; /* Agregué un borde visible para hacer más claro el área del input */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+    block-size: 26px; /* Aumenta la altura de los campos de entrada (más alto en el eje Y) */
+}
+.Registrate-Container button{
+    display: block;
+    inline-size: 100%;
+    color: white;
+    block-size: 34px;
+    border: 1px solid #ccc; /* Agregué un borde visible para hacer más claro el área del input */
+    border-radius: 4px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: blueviolet;
+
+
+    
+}
+
+
+
+footer{
+    background-color: rgb(242, 246, 247);
+    max-inline-size: 100%;
+    padding-inline-start: 20px;
+    flex-wrap: wrap; /* Permitir ajuste en pantallas pequeñas */
+    margin-block-start: auto;
+    margin-block-start: 2%; /* Esto lo mueve un poco hacia abajo */
+
+    
+}

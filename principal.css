@@ -1,0 +1,385 @@
+body{
+
+    background-image: url('fondo2.JPEG'); /* Ruta de la imagen */
+    background-size: cover; /* Cubre completamente el área del header */
+    background-position: center; /* Centra la imagen */
+}
+
+header {
+    background-image: url('fondo1.JPEG'); /* Ruta de la imagen */
+    background-size: cover; /* Cubre completamente el área del header */
+    background-position: center; /* Centra la imagen */
+    color: #fff; /* Texto en blanco para contraste */
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative; /* Necesario para la superposición */
+    border-radius: 8px;
+
+}
+
+
+
+/* Contenido principal (Main) */
+main {
+    inline-size: auto;
+    margin-inline-start: auto; /* Desplazar el contenido a la derecha del sidebar */
+    flex: 1; /* Usar el espacio restante del contenedor */
+    display: flex;
+    gap: 20px; /* Espaciado entre section y aside */
+    inline-size: auto;;
+}
+
+
+
+/* Sidebar */
+.sidebar {
+
+
+/* 
+   background: #fff; /* Fondo blanco */
+/*    block-size: 100vh; /* Altura completa del viewport */
+  /*  padding: 20px; /* Espaciado interno */
+    /*border-inline-end: 1px solid #ccc; /* Línea divisoria entre sidebar y contenido */
+    /*box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    /*justify-content: space-between; /* Asegura el contenido distribuido correctamente */
+    /*box-sizing: border-box;
+    /*column-width: 100%;
+
+/*
+    inline-size: 18%; 
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-block-start: 2px;
+
+*/
+    
+
+    inline-size: 22%; /* Ocupar el 35% del espacio del main */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgb(211, 254, 255);
+    margin-block-start: 12px;
+    background-image: url('fondo3.jpeg'); /* Imagen de fondo */
+
+    
+}
+.sidebar h3{
+    color: white;
+}
+
+.sidebar ul , li{
+    list-style-type: none; /* Elimina los puntos o bullets */
+    transition: all 0.3s ease;
+    
+}
+
+.sidebar ul  li {
+
+        display: flex; /* Usamos Flexbox para alineación de icono y texto */
+        align-items: center; /* Alinea los elementos de la lista verticalmente */
+        padding: 12px 20px; /* Relleno para cada item */
+        margin-block-end: 6px; /* Espaciado entre los elementos */
+        border-radius: 8px; /* Bordes redondeados */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        transition: all 0.3s ease; /* Transición suave para efectos hover */
+
+}
+
+
+
+
+
+/* Links del sidebar */
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+    color: #f0f0f0;
+}
+
+
+
+/* Sección principal */
+.main-story {
+    inline-size: 65%; /* Ocupar el 65% del espacio del main */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgb(211, 254, 255);
+    margin-block-start: 12px;
+
+}
+
+/* Aside para historias relacionadas */
+.other-stories {
+    inline-size: 35%; /* Ocupar el 35% del espacio del main */
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgb(211, 254, 255);
+    margin-block-start: 12px;
+
+}
+
+/* Espaciado interno y legibilidad para textos */
+.main-story p,
+.other-stories p {
+    margin: 0;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Estilo para las imágenes dentro del main */
+.main-story img,
+.other-stories img {
+    inline-size: 100%; /* Siempre ocupan el ancho completo de su contenedor */
+    block-size: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.other-stories ul  li {
+
+    display: flex; /* Usamos Flexbox para alineación de icono y texto */
+    align-items: center; /* Alinea los elementos de la lista verticalmente */
+    padding: 12px 20px; /* Relleno para cada item */
+    margin-block-end: 6px; /* Espaciado entre los elementos */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: all 0.3s ease; /* Transición suave para efectos hover */
+
+}
+
+
+
+
+
+
+
+
+/* Main debe expandirse dentro del contenedor */
+main {
+    flex: 1; /* Ocupar el espacio disponible entre header y footer */
+    display: flex;
+    gap: 20px; /* Espaciado entre los elementos internos */
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    font-size: 0.85rem;
+    position: relative; /* Asegura que no interfiera con otros elementos */
+    margin-block-start: 20px; /* Espaciado superior para separarlo del contenido */
+    clear: both; /* Garantiza que no flote junto a ningún elemento */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra superior sutil */
+    flex: auto;
+    
+}
+
+
+
+
+
+
+
+
+/* Variables globales para colores, fuentes y tamaños */
+:root {
+    --font-size-base: 16px;
+    --font-size-small: 0.875rem; /* 14px */
+    --font-size-xsmall: 0.75rem; /* 12px */
+    --font-size-large: 1.125rem; /* 18px */
+    --font-size-header: 1.5rem; /* 24px */
+    --padding-base: 16px;
+    --padding-small: 12px;
+    --padding-xsmall: 8px;
+    --primary-color: #333;
+    --secondary-color: #555;
+    --background-color: #f9f9f9;
+}
+
+/* Reset general para mayor consistencia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    padding: var(--padding-base);
+}
+
+/* Base de estilos para los elementos principales */
+header {
+    font-size: var(--font-size-header);
+    text-align: center;
+    margin-bottom: var(--padding-base);
+}
+
+.sidebar {
+    padding: var(--padding-base);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: var(--padding-base);
+}
+
+.sidebar h3 {
+    font-size: var(--font-size-large);
+    margin-bottom: var(--padding-small);
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: var(--padding-small);
+    border-bottom: 1px solid #ddd;
+}
+
+.main-story, .other-stories {
+    padding: var(--padding-base);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: var(--padding-base);
+}
+
+.main-story p, .other-stories p {
+    font-size: var(--font-size-base);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Estilos responsivos generales */
+    @media (max-width: 1024px) {
+        .main-story,
+        .sidebar,
+        .other-stories {
+            inline-size: 100%; /* Ocupar todo el ancho disponible */
+            margin-block-start: 0; /* Eliminar márgenes superiores */
+            margin-inline: 0; /* Alinear al centro */
+        }
+
+        .main-story {
+            order: 1; /* Mostrar primero la historia principal */
+        }
+
+        .sidebar {
+            order: 2; /* Mostrar el sidebar después */
+        }
+
+        .other-stories {
+            order: 3; /* Mostrar las historias relacionadas al final */
+        }
+
+        /* Ajustar el tamaño del texto */
+        .sidebar h3,
+        .main-story h2,
+        .other-stories h2 {
+            font-size: 1.2rem; /* Ajustar para pantallas medianas */
+        }
+
+        .sidebar ul li,
+        .main-story p,
+        .other-stories p {
+            font-size: 1rem; /* Fuente más legible en pantallas medianas */
+        }
+    }
+
+    /* Estilos para pantallas pequeñas */
+    @media (max-width: 768px) {
+        main {
+            flex-direction: column; /* Reorganizar en columna */
+            gap: 12px; /* Reducir espaciado entre elementos */
+        }
+
+        header {
+            font-size: 1.2rem; /* Reducir tamaño del título en el header */
+        }
+
+        .main-story,
+        .sidebar,
+        .other-stories {
+            inline-size: 100%; /* Ocupar todo el ancho */
+            margin-block-start: 0; /* Eliminar márgenes superiores */
+            padding: 15px; /* Reducir padding interno */
+        }
+
+        .sidebar ul li {
+            padding: 10px; /* Reducir espaciado interno */
+        }
+
+        .main-story img,
+        .other-stories img {
+            border-radius: 4px; /* Redondeado más discreto */
+            box-shadow: none; /* Quitar sombra en móviles */
+        }
+    }
+
+    /* Estilos para pantallas muy pequeñas (móviles) */
+    @media (max-width: 480px) {
+        header {
+            font-size: 1rem; /* Ajustar tamaño de fuente del header */
+            padding: 8px; /* Reducir padding en móviles */
+        }
+
+        .sidebar ul li,
+        .main-story p,
+        .other-stories p {
+            font-size: 0.9rem; /* Reducir tamaño de texto en móviles */
+        }
+
+        .main-story,
+        .sidebar,
+        .other-stories {
+            padding: 10px; /* Menor espaciado interno en móviles */
+        }
+
+        footer {
+            font-size: 0.75rem; /* Reducir tamaño de fuente del footer */
+            padding: 8px; /* Reducir padding del footer */
+        }
+    }

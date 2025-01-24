@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles.css">
+
+</head>
+
+<body>
+
+    <header> Registrate
+         </header>
+
+
+<div class="Registrate-Container">
+
+<form id="registrateForm">
+
+<label for="nombreId">Nombre</label>
+<input type="text" id="nombreId" name="nombre"  placeholder="Escribe tu nombre" maxlength="25" 
+title="ingresa tu nombre aquí"  > 
+
+<label for="ApellidoId">Apellido</label>
+<input type="text" id="ApellidoId" name="apellido"  placeholder="Escribe tu apellido" maxlength="30"
+title="ingresa tu apellido aquí"   > 
+
+<label for="emailId">Correo</label>
+<input type="email" name="correo" id="emailId" placeholder="Escribe tu correo electronico"  required  remaxlength="30" 
+ pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="ingresa tu numero de Telefono">
+
+<label for="NumeroId">Telefono</label>
+<input type="tel" id="NumeroId" name="Numero" placeholder="Numero celular" required minlength="9"  
+ maxlength="9" pattern="^\d{9}$" title="El número debe tener exactamente 9 dígitos" >
+
+ <label for="PasswordId">Constraseña</label>
+<input type="password" id="PasswordId" name="Constraseña" placeholder=" Escribe una contraseña" required minlength="8"   
+ title="debe tener minimo 8 dígitos" >
+
+ <label> </label>
+ <button type="submit" onclick="validarFormulario(event)">Registrate</button> <!-- Cambié type="submit" y pasé event -->
+
+</form>
+</div>
+
+
+         <footer>
+            <p> &copy; mi sitio web . Todos los derechos reservadoos </p>
+         </footer>
+</body>
+<script src="script.js" defer></script> <!-- Enlazamos con el archivo JS -->
+
+</html>
